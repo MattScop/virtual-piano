@@ -63,25 +63,28 @@ body {
 .white-key {
     width: calc(100% / 29);
     background-color:blue;
-}
-
-.black-keys-container {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-}
-
-.double-black-container,
-.triple-black-container {
-    display: flex;
-    width: 100%;
-    height: 100%;
+    position: relative;
 }
 
 .black-key {
-    height: 50%;
-    width: calc(57px-(57px*30%/100));
+    height: 62%;
+    width: 37px;
     background-color: orange;
+    position: absolute;
+    z-index: 1;
+}
+.black-key.couple-left {
+    left: 50%;
+}
+.black-key.couple-right {
+    left: 87%;
+}
+.black-key.triple-left {
+    left: 50%;
+}
+.black-key.triple-middle {
+    left: 70%;
+}
+.black-key.triple-right {
+    left: 87%;
 }
