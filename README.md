@@ -19,12 +19,14 @@ for me. Hopefully it goes well.
 I looked at the video twice to grasp what I could.
 
 **The rule for this project is to never get back to that video again, but try to recall everything.**
-**If I am stuck, then I have to Google it and link the source I Googled here**
+**If I am stuck, then I have to Google it**
 
 
 
 [^1]SOURCES:
 - Header piano picture: https://www.pexels.com/@danielspase/
+- Background piano picture: https://wallpaperaccess.com/
 
 
-[^2]GOOGLE QUERIES:
+[^2]DETAILS ABOUT THE DESIGN:
+- Virtual Piano here is 49 keys.
