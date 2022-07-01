@@ -26,6 +26,7 @@ I looked at the video twice to grasp what I could.
 [^1]SOURCES:
 - Header piano picture: https://www.pexels.com/@danielspase/
 - Background piano picture: https://wallpaperaccess.com/
+- Piano sound samples (A BIG THANKS): https://theremin.music.uiowa.edu/MISpiano.html
 
 
 [^2]DETAILS ABOUT THE DESIGN:
