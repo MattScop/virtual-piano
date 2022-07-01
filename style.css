@@ -9,7 +9,7 @@ body {
     margin: 0;
     height: 100vh;
     width: 100vw;
-    background: url('./img/background-wallpaper.jpg');
+    background: url('./img/background-piano-V2.jpg');
     background-size: cover;
     display: flex;
     align-items: center;
@@ -20,29 +20,21 @@ body {
     min-height: 617px;
     min-width: 1727px;
     margin: 0 auto;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgb(235 235 235) 100%);
+    background: linear-gradient(165deg, rgba(0,0,0,0.8519782913165266) -100%, rgba(209,209,209,1) 50%), linear-gradient(180deg, rgba(209,209,209,1) 0%, rgba(255,255,255,1) 100%), linear-gradient(90deg, rgba(209,209,209,1) 0%, rgba(255,255,255,1) 100%);
+    box-shadow: inset 0 0 4px 0px black;
     position: relative;
-    border-radius: 100px 100px 20px 20px;
+    border-radius: 150px 150px 25px 25px;
 }
 
-.top-base {
-    min-height: 201px;
-    min-width: 1727px;
-    margin: 0 auto;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgb(235 235 235) 100%);
-    position: absolute;
-    border-radius: 100px 100px 0px 0px;
-    z-index: 1;
-}
-
-.top-base::after {
+#piano-container::after {
     content: "";
     width: 100%;
-    height: 1px;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: 5px;
+    background: transparent;
     position: absolute;
-    bottom: 0;
-    box-shadow: 0 2px 4px 0 black;
+    bottom: 416px;
+    z-index: 1;
+    box-shadow: 0 3px 2px 0 rgb(0 0 0 / 60%);
 }
 
 .keys-base-container {
@@ -64,21 +56,14 @@ body {
     margin: 0 auto;
 }
 
-.keys-container::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 0px 4px 0px black;
-    border-radius: 0 0 10px 10px;
-}
-
 .white-key {
     width: calc(100% / 29);
     background-color: white;
     position: relative;
     border-radius: 0 0 5px 5px;
     border-right: 0.5px solid black;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 50%);
+    transition: all 0.07s ease-in-out;
 }
 .white-key:last-child {
     border-right: none;
@@ -90,6 +75,9 @@ body {
     background-color: black;
     position: absolute;
     z-index: 1;
+    box-shadow: 0px 3px 9px 0px rgb(0 0 0 / 50%);
+    border-radius: 0 0 4px 4px;
+    transition: all 0.07s ease-in-out;
 }
 
 .black-key.couple-left {
@@ -110,4 +98,8 @@ body {
 
 .black-key.triple-right {
     left: 87%;
+}
+
+.keyPressed {
+    box-shadow: inset 0 -5px 10px 0px rgb(0 0 0 / 50%);
 }
