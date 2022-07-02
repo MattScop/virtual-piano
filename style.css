@@ -64,6 +64,8 @@ body {
     border-right: 0.5px solid black;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 50%);
     transition: all 0.07s ease-in-out;
+    display: flex;
+    justify-content: center;
 }
 .white-key:last-child {
     border-right: none;
@@ -78,6 +80,8 @@ body {
     box-shadow: 0px 3px 9px 0px rgb(0 0 0 / 50%);
     border-radius: 0 0 4px 4px;
     transition: all 0.07s ease-in-out;
+    display: flex;
+    justify-content: center;
 }
 
 .black-key.couple-left {
@@ -98,6 +102,16 @@ body {
 
 .black-key.triple-right {
     left: 87%;
+}
+
+.white-note,
+.black-note {
+    align-self: flex-end;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.black-note {
+    color: white;
 }
 
 .keyPressed {

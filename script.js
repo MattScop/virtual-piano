@@ -21,8 +21,10 @@ window.addEventListener('keydown', (e) => {
     keyPress.classList.add('keyPressed')
 
     if (!audio) return // stop the function if no data-key is found
+    if (!e.repeat) {
     audio.currentTime = 0; // rewind the audio from start each press
     audio.play();
+    }
 })
 
 window.addEventListener('keyup', (e) => {
