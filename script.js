@@ -14,18 +14,20 @@
 
 // **STEP 3: add class if played**
 
-window.addEventListener('keyup', (e) => {
+window.addEventListener('keydown', (e) => {
     const keyPress = document.querySelector(`div[data-key="${e.key}"]`);
     const audio = document.querySelector(`audio[data-key="${e.key}"]`);
 
     keyPress.classList.add('keyPressed')
-    keyPress.addEventListener('transitionend', () => {
-        console.log("hello")
-    });
 
     if (!audio) return // stop the function if no data-key is found
-    audio.currentTime = 0;
+    audio.currentTime = 0; // rewind the audio from start each press
     audio.play();
+})
+
+window.addEventListener('keyup', (e) => {
+    const keyPress = document.querySelector(`div[data-key="${e.key}"]`);
+    keyPress.classList.remove('keyPressed')
 })
     
     
