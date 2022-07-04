@@ -9,188 +9,198 @@
 </head>
 
 <body>
+    <div class="text">
+        <h1>Virtual Piano</h1>
+        <h2>Try it now:</h2>
+        <p>8-w-t-u-5-9-w-r-6-0-e-t-4-8-q-e-5-9-w-r-8f-w-t-u-5d-9-w-r-6s-0-e-t-4p-8-q-e-5a-9-w-r</p>
+    </div>
+    
     <div id="piano-container">
 
+
+        <div class="speaker-left"></div>
+        <div class="speaker-right"></div>
+
         <div class="display">
-            <h3>NOTES PRESSED:</h3>
+            <h3>NOTES PRESSED</h3>
         </div>
         
         <div class="keys-base-container">
             <div class="keys-container">
 
-                <div data-key="1" class="white-key">
-                    <div data-key="!" class="black-key couple-left">
+                <div data-key="1" data-name="C2" class="white-key">
+                    <div data-key="!" data-name="Db2" class="black-key couple-left">
                         <kbd class="black-note">!</kbd>
                     </div>
                     <kbd class="white-note">1</kbd>
                 </div>
 
-                <div data-key="2" class="white-key">
-                    <div data-key="@" class="black-key couple-right">
+                <div data-key="2" data-name="D2" class="white-key">
+                    <div data-key="@" data-name="Eb2" class="black-key couple-right">
                         <kbd class="black-note">@</kbd>
                     </div>
                     <kbd class="white-note">2</kbd>
                 </div>
 
-                <div data-key="3" class="white-key">
+                <div data-key="3" data-name="E2" class="white-key">
                     <kbd class="white-note">3</kbd>
                 </div>
 
-                <div data-key="4" class="white-key">
-                    <div data-key="$" class="black-key triple-left">
+                <div data-key="4" data-name="F2" class="white-key">
+                    <div data-key="$" data-name="Gb2" class="black-key triple-left">
                         <kbd class="black-note">$</kbd>
                     </div>
                     <kbd class="white-note">4</kbd>
                 </div>
 
-                <div data-key="5" class="white-key">
-                    <div data-key="%" class="black-key triple-middle">
+                <div data-key="5" data-name="G2" class="white-key">
+                    <div data-key="%" data-name="Ab2" class="black-key triple-middle">
                         <kbd class="black-note">%</kbd>
                     </div>
                     <kbd class="white-note">5</kbd>
                 </div>
 
-                <div data-key="6" class="white-key">
-                    <div data-key="^" class="black-key triple-right">
+                <div data-key="6" data-name="A2" class="white-key">
+                    <div data-key="^" data-name="Bb2" class="black-key triple-right">
                         <kbd class="black-note">^</kbd>
                     </div>
                     <kbd class="white-note">6</kbd>
                 </div>
 
-                <div data-key="7" class="white-key">
+                <div data-key="7" data-name="B2" class="white-key">
                     <kbd class="white-note">7</kbd>
                 </div>
 
-                <div data-key="8" class="white-key">
-                    <div data-key="*" class="black-key couple-left">
+                <div data-key="8" data-name="C3" class="white-key">
+                    <div data-key="*" data-name="Db3" class="black-key couple-left">
                         <kbd class="black-note">*</kbd>
                     </div>
                     <kbd class="white-note">8</kbd>
                 </div>
 
-                <div data-key="9" class="white-key">
-                    <div data-key="(" class="black-key couple-right">
+                <div data-key="9" data-name="D3" class="white-key">
+                    <div data-key="(" data-name="Eb3" class="black-key couple-right">
                         <kbd class="black-note">(</kbd>
                     </div>
                     <kbd class="white-note">9</kbd>
                 </div>
 
-                <div data-key="0" class="white-key">
+                <div data-key="0" data-name="E3" class="white-key">
                     <kbd class="white-note">0</kbd>
                 </div>
 
-                <div data-key="q" class="white-key">
-                    <div data-key="Q" class="black-key triple-left">
+                <div data-key="q" data-name="F3" class="white-key">
+                    <div data-key="Q" data-name="Gb3" class="black-key triple-left">
                         <kbd class="black-note">Q</kbd>
                     </div>
                     <kbd class="white-note">q</kbd>
                 </div>
 
-                <div data-key="w" class="white-key">
-                    <div data-key="W" class="black-key triple-middle">
+                <div data-key="w" data-name="G3" class="white-key">
+                    <div data-key="W" data-name="Ab3" class="black-key triple-middle">
                         <kbd class="black-note">W</kbd>
                     </div>
                     <kbd class="white-note">w</kbd>
                 </div>
                 
-                <div data-key="e" class="white-key">
-                    <div data-key="E" class="black-key triple-right">
+                <div data-key="e" data-name="A3" class="white-key">
+                    <div data-key="E" data-name="Bb3" class="black-key triple-right">
                         <kbd class="black-note">E</kbd>
                     </div>
                     <kbd class="white-note">e</kbd>
                 </div>
 
-                <div data-key="r" class="white-key">
+                <div data-key="r" data-name="B3" class="white-key">
                     <kbd class="white-note">r</kbd>
                 </div>
 
-                <div data-key="t" class="white-key">
-                    <div data-key="T" class="black-key couple-left">
+                <div data-key="t" data-name="C4" class="white-key">
+                    <div data-key="T" data-name="Db4" class="black-key couple-left">
                         <kbd class="black-note">T</kbd>
                     </div>
                     <kbd class="white-note">t</kbd>
                 </div>
 
-                <div data-key="y" class="white-key">
-                    <div data-key="Y" class="black-key couple-right">
+                <div data-key="y" data-name="D4" class="white-key">
+                    <div data-key="Y" data-name="Eb4" class="black-key couple-right">
                         <kbd class="black-note">Y</kbd>
                     </div>
                     <kbd class="white-note">y</kbd>
                 </div>
 
-                <div data-key="u" class="white-key">
+                <div data-key="u" data-name="E4" class="white-key">
                     <kbd class="white-note">u</kbd>
                 </div>
 
-                <div data-key="i" class="white-key">
-                    <div data-key="I" class="black-key triple-left">
+                <div data-key="i" data-name="F4" class="white-key">
+                    <div data-key="I" data-name="Gb4" class="black-key triple-left">
                         <kbd class="black-note">I</kbd>
                     </div>
                     <kbd class="white-note">i</kbd>
                 </div>
                  
-                <div data-key="o" class="white-key">
-                    <div data-key="O" class="black-key triple-middle">
+                <div data-key="o" data-name="G4" class="white-key">
+                    <div data-key="O" data-name="Ab4" class="black-key triple-middle">
                         <kbd class="black-note">O</kbd>
                     </div>
                     <kbd class="white-note">o</kbd>
                 </div>
 
-                <div data-key="p" class="white-key">
-                    <div data-key="P" class="black-key triple-right">
+                <div data-key="p" data-name="A4" class="white-key">
+                    <div data-key="P" data-name="Bb4" class="black-key triple-right">
                         <kbd class="black-note">P</kbd>
                     </div>
                     <kbd class="white-note">p</kbd>
                 </div>
 
-                <div data-key="a" class="white-key">
+                <div data-key="a" data-name="B4" class="white-key">
                     <kbd class="white-note">a</kbd>
                 </div>
 
-                <div data-key="s" class="white-key">
-                    <div data-key="S" class="black-key couple-left">
+                <div data-key="s" data-name="C5" class="white-key">
+                    <div data-key="S" data-name="Db5" class="black-key couple-left">
                         <kbd class="black-note">S</kbd>
                     </div>
                     <kbd class="white-note">s</kbd>
                 </div>
 
-                <div data-key="d" class="white-key">
-                    <div data-key="D" class="black-key couple-right">
+                <div data-key="d" data-name="D5" class="white-key">
+                    <div data-key="D" data-name="Eb5" class="black-key couple-right">
                         <kbd class="black-note">D</kbd>
                     </div>
                     <kbd class="white-note">d</kbd>
                 </div>
 
-                <div data-key="f" class="white-key">
+                <div data-key="f" data-name="E5" class="white-key">
                     <kbd class="white-note">f</kbd>
                 </div>
 
-                <div data-key="g" class="white-key">
-                    <div data-key="G" class="black-key triple-left">
+                <div data-key="g" data-name="F5" class="white-key">
+                    <div data-key="G" data-name="Gb5" class="black-key triple-left">
                         <kbd class="black-note">G</kbd>
                     </div>
                     <kbd class="white-note">g</kbd>
                 </div>
 
-                <div data-key="h" class="white-key">
-                    <div data-key="H" class="black-key triple-middle">
+                <div data-key="h" data-name="G5" class="white-key">
+                    <div data-key="H" data-name="Ab5" class="black-key triple-middle">
                         <kbd class="black-note">H</kbd>
                     </div>
                     <kbd class="white-note">h</kbd>
                 </div>
 
-                <div data-key="j" class="white-key">
-                    <div data-key="J" class="black-key triple-right">
+                <div data-key="j" data-name="A5" class="white-key">
+                    <div data-key="J" data-name="Bb5" class="black-key triple-right">
                         <kbd class="black-note">J</kbd>
                     </div>
                     <kbd class="white-note">j</kbd>
                 </div>
 
-                <div data-key="k" class="white-key">
+                <div data-key="k" data-name="B5" class="white-key">
                     <kbd class="white-note">k</kbd>
                 </div>
 
-                <div data-key="l" class="white-key">
+                <div data-key="l" data-name="C6" class="white-key">
                     <kbd class="white-note">l</kbd>
                 </div>
 
@@ -250,7 +260,6 @@
     <audio data-key="l" src="sounds/C6.mp3"></audio>
 
     
-
 </body>
 
 </html>

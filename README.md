@@ -23,6 +23,13 @@ I looked at the video twice to grasp what I could.
 
 
 
+**UPDATE:**
+Project is finished. It has not been tremendously difficult. I had to
+Google a couple of things like how to prevent the keydown event to
+continuously play the corresponding audio. Overall I am proud of myself.
+
+
+
 [^1]SOURCES:
 - Header piano picture: https://www.pexels.com/@danielspase/
 - Background piano picture: https://wallpaperaccess.com/

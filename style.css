@@ -4,6 +4,11 @@ html {
     box-sizing: border-box;
 }
 
+h1,h2 {
+    font-family: Parisienne, sans-serif;
+    color: white;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -12,15 +17,17 @@ body {
     background: url('./img/background-piano-V2.jpg');
     background-size: cover;
     display: flex;
+    flex-direction: column;
     align-items: center;
     overflow: hidden;
+    font-family: Arima, sans-serif;
 }
 
 #piano-container {
     min-height: 617px;
     min-width: 1727px;
     margin: 0 auto;
-    background: linear-gradient(165deg, rgba(0,0,0,0.8519782913165266) -100%, rgba(209,209,209,1) 50%), linear-gradient(180deg, rgba(209,209,209,1) 0%, rgba(255,255,255,1) 100%), linear-gradient(90deg, rgba(209,209,209,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(165deg, rgba(0, 0, 0, 0.8519782913165266) -100%, rgba(209, 209, 209, 1) 50%), linear-gradient(180deg, rgba(209, 209, 209, 1) 0%, rgba(255, 255, 255, 1) 100%), linear-gradient(90deg, rgba(209, 209, 209, 1) 0%, rgba(255, 255, 255, 1) 100%);
     box-shadow: inset 0 0 4px 0px black;
     position: relative;
     border-radius: 150px 150px 25px 25px;
@@ -67,6 +74,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .white-key:last-child {
     border-right: none;
 }
@@ -110,6 +118,7 @@ body {
     padding-bottom: 10px;
     font-size: 20px;
 }
+
 .black-note {
     color: white;
 }
@@ -117,16 +126,54 @@ body {
 .display {
     width: 200px;
     height: 90px;
-    background-color: black;
+    background: linear-gradient(30deg, rgba(49,49,49,1) 50%, rgb(100 100 100 / 85%) 60%, rgba(49,49,49,1) 70%);
     margin: 0 auto;
-    margin-top: 25px;
+    margin-top: 48px;
     border-radius: 5px;
     overflow: hidden;
+    box-shadow: inset 0 0 0px 2px #acacac;
+    word-break: break-all;
 }
 
 .display h3 {
     color: white;
     margin: 5px;
+    text-align: center;
+}
+
+.speaker-left,
+.speaker-right {
+    min-height: 170px;
+    min-width: 250px;
+    margin: 0 auto;
+    background-color: black;
+    box-shadow: 0 0 3px 0px black;
+    position: absolute;
+    border-radius: 150px 10px 25px 25px;
+    top: 15px;
+    background-image: url(./img/speaker-grill.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.speaker-left {
+    left: 25px;
+}
+
+.speaker-right {
+    right: 25px;
+    transform: rotateX(0deg) rotateY(180deg);
+}
+
+.text {
+    text-align: center;
+    color: white
+}
+
+.text h1 {
+    font-size: 54px;
+    margin-bottom: 0;
 }
 
 .keyPressed {
