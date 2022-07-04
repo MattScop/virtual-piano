@@ -6,6 +6,7 @@
 // DONE
 
 
+
 const para = document.createElement('p');
 para.style.cssText = "color: white; padding: 10px; text-align: center; font-size: 20px; letter-spacing: 0.25em; font-style: italic; margin-top: 0";
 
@@ -34,9 +35,12 @@ window.addEventListener('keydown', (e) => {
 
 window.addEventListener('keyup', (e) => {
     const keyPress = document.querySelector(`div[data-key="${e.key}"]`);
-
+    
     if (!keyPress) return
     keyPress.classList.remove('keyPressed')
 })
-    
+
+window.onload = () => {
+    alert("Virtual Piano is Designed to work ONLY with a Computer and a Keyboard. Press OK to continue")
+}
     
