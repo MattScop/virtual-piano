@@ -33,6 +33,7 @@ continuously play the corresponding audio. Overall I am proud of myself.
 [^1]SOURCES:
 - Header piano picture: https://www.pexels.com/@danielspase/
 - Background piano picture: https://wallpaperaccess.com/
+- Speakers: https://www.flanners.com/
 - Piano sound samples (A BIG THANKS): https://theremin.music.uiowa.edu/MISpiano.html
 
 
